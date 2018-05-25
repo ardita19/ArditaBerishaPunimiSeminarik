@@ -8,8 +8,9 @@ public class AppointmentsReader
     {  char a='a';
 
         input1 = JOptionPane.showInputDialog(message);
-
-        if ( input1 !=null && input1.length() > 0) {
+        if(input1 ==null )
+        {System.exit(0);}
+        if (   input1.length() > 0) {
             input1=input1.trim().toUpperCase();
             a = input1.charAt(0);
         }
@@ -19,7 +20,8 @@ public class AppointmentsReader
     public String readDay(String message)
     {  String a="";
         input=JOptionPane.showInputDialog(message);
-        if(input !=null && input.length()>1){
+        if(input ==null ){System.exit(0);}
+        if( input.length()>1){
             input=input.trim().toUpperCase();
             a=input.substring(0,2);
         }

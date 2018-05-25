@@ -2,7 +2,8 @@ import javax.swing.*;
 public class AppointmentsModel
 {  private boolean checkvalue;
 
-    int[][] appointments=new int[7][8];
+    private int[][] appointments=new int[7][8];
+    private String[] output=new String[7];
 
     public boolean check(int i,int j)
     {  boolean a=false;
@@ -56,6 +57,7 @@ public class AppointmentsModel
     }
 
 
+   
 
     public int[][] getAppointments()
     {
