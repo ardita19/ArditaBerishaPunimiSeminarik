@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.text.*;
 
 public class AppointmentsWritter extends JPanel
-{ private int WIDTH = 300;
-    private int DEPTH = 300;
+{ private int WIDTH = 500;
+    private int DEPTH = 500;
     private int distance;
 
     private String output = "";
@@ -15,8 +15,6 @@ public class AppointmentsWritter extends JPanel
     private String output4 = "";
     private String output5 = "";
     private String output6 = "";
-
-
     public AppointmentsWritter(String title)
     {
         JFrame my_frame = new JFrame();
@@ -37,8 +35,6 @@ public class AppointmentsWritter extends JPanel
         int text_baseline =50;
 
         drawString(g,output+"\n"+output1+"\n"+output2+"\n"+output3+"\n"+output4+"\n"+output5+"\n"+output6, text_margin, text_baseline );
-
-
     }
 
     public void print(String message,String message1,String message2,String message3,String message4,String message5,String message6)
@@ -51,16 +47,9 @@ public class AppointmentsWritter extends JPanel
         output5 = message5 + " ";
         output6 = message6 + " ";
         this.repaint();
-
-
     }
     public void error(String message)
     {
-
         JOptionPane.showMessageDialog(null,message);
-
     }
-
-
-
 }
