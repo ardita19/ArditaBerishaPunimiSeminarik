@@ -5,7 +5,7 @@ import java.text.*;
 
 public class AppointmentsWritter extends JPanel
 { private int WIDTH = 500;
-    private int DEPTH = 500;
+    private int DEPTH = 300;
     private int distance;
 
     private String output = "";
